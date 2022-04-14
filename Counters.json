@@ -1,0 +1,18 @@
+[
+    "\\Memory\\Available MBytes",
+    "\\Memory\\Page Faults/sec",
+    "\\Memory\\Page Reads/sec",
+    "\\Memory\\Page Writes/sec",
+    "\\Memory\\Pages/sec",
+    "\\Processor(_Total)\\% Interrupt Time",
+    "\\Processor(_Total)\\% Privileged Time",
+    "\\Processor(_Total)\\% Processor Time",
+    "\\Processor(_Total)\\% User Time",
+    "\\Processor Information(_Total)\\% Processor Time",
+    "\\.NET CLR Exceptions(*)\\# of Exceps Thrown / sec",
+    "\\APP_POOL_WAS(*)\\Current Application Pool State",
+    "\\APP_POOL_WAS(*)\\Current Application Pool Uptime",
+    "\\HTTP Service Request Queues(*)\\CurrentQueueSize",
+    "\\HTTP Service Url Groups(*)\\CurrentConnections",
+    "\\HTTP Service Url Groups(*)\\MaxConnections"
+]

@@ -26,11 +26,20 @@ Function Get-PerfMonDataCollectorSet {
             Write-Verbose "Getting information for data collector set $D"
 
             # Query changes $sets so work from there
-            $sets.Query($DataCollectorSetName, $null)
-            $set = $sets.PSObject.Copy()
+            # ----- redirect error stream to variable so we can see if there was an error
+            $E = $($sets.Query($D, $null)) 2>&1
 
-            Write-Output $set
+            if ( $E ) {
+                write-Warning "Get-PerfmonDataCollectorSet : Error `n`n$E"
+                
+                # ----- Reset Error var back to null
+                $E = $Null
+            }
+            Else {
+                $set = $sets.PSObject.Copy()
+
+                Write-Output $set
+            }
         }
     }
-
 }
